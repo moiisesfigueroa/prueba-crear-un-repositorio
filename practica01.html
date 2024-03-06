@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <header><h1>Registro de productos</h1></header>
+    <table>
+      <tr>
+        <td>
+          <label for="product">Ingrese producto: </label>
+        </td>
+        <td>
+          <input type="text" id="product" name="product" required />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="descripcion">Ingrese descripción: </label>
+        </td>
+        <td>
+          <input type="text" id="description" name="description" required />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="descripcion">Ingrese precio: </label>
+        </td>
+        <td>
+          <input type="number" id="precio" name="precio" required />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="cantidad">Ingrese cantidad: </label>
+        </td>
+        <td>
+          <input type="number" id="cantidad" name="cantidad" required />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="fecha">Fecha de caducidad: </label>
+        </td>
+        <td>
+          <input type="date" id="fecha" name="fecha" required />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="submit" value="Enviar" required />
+        </td>
+      </tr>
+    </table>
+
+    <br /><br />
+
+    <form action="/enviar" method="get">
+      <label for="product">Ingrese producto: </label>
+      <input type="text" id="product" name="product" required />
+      <label for="descripcion">Ingrese descripción: </label>
+      <input type="text" id="description" name="description" required />
+    </form>
+  </body>
+</html>
